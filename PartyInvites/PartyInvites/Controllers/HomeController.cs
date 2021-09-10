@@ -3,6 +3,10 @@ using System;
 using PartyInvites.Models;
 using System.Linq;
 
+// Created a Home controller, where return a View of the httpGet, passing the same input the user input,
+// and use the http post to send to the class repository the user's form input.
+// then return the View Thanks plus the guestResponse.
+
 namespace PartyInvites.Controllers
 {
     public class HomeController : Controller

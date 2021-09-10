@@ -4,13 +4,19 @@
 @{ 
     Layout = null;
 }
+
+<!--This view will return the Thanks after the user submit the Form-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Thanks</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
-<body>
+<body class="text-center">
+
     <p>
         <h1>Thank you,@Model.Name!</h1>
         @if (Model.WillAttend == true)
@@ -21,6 +27,6 @@
                 @:Sorry to hear that you can't make it, bu thanks for letting us know.
             }
     </p>
-    <p>Click <a asp-action="ListResponses">Here</a> to see who is coming</p>
+    >Click <a class="navbar-link"  asp-action="ListResponses">Here</a> to see who is coming
 </body>
 </html>
